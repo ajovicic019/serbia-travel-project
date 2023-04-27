@@ -144,7 +144,7 @@ main h5 {
   margin: 0;
 }
 .img-responsive {
-  max-width: 100%;
+  width: 100%;
   display: block;
 }
 .grid {
@@ -159,6 +159,13 @@ main h5 {
 }
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
+}
+.card-header.grid {
+  grid-gap: 0;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1 /1;
 }
 .text-center {
   text-align: center;
@@ -213,5 +220,11 @@ main h5 {
   .grid {
     grid-template-columns: 1fr;
     grid-gap: 32px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16 /9;
   }
 }
