@@ -50,6 +50,10 @@ header a {
   display: inline-block;
   padding: 28px 32px;
   margin-top: 32px;
+  transition: all 200ms ease-in-out;
+}
+a:hover {
+  transform: scale(1.1);
 }
 .container {
   max-width: 1200px;
@@ -95,6 +99,9 @@ section {
   margin: 0 auto;
   padding: 100px;
 }
+section.secondary {
+  background-color: #f8f8f8;
+}
 main {
   background-color: #ffffff;
 }
@@ -118,12 +125,27 @@ main h3 {
 main p {
   font-weight: 400;
   font-size: 16px;
-  line-height: 24px;
+  line-height: 1.5;
   color: #272044;
   opacity: 0.7;
 }
+main h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1;
+  color: #272044;
+  margin: 0;
+}
+main h5 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1.5;
+  color: #272044;
+  margin: 0;
+}
 .img-responsive {
   max-width: 100%;
+  display: block;
 }
 .grid {
   display: grid;
@@ -132,8 +154,41 @@ main p {
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
 }
-.grid-3-columns {
+.grid-3-columns-1-narrow {
   grid-template-columns: 1fr 2fr 2fr;
+}
+.grid-3-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.text-center {
+  text-align: center;
+}
+.card {
+  background-color: #ffffff;
+  margin: 30px 0;
+}
+.card-body {
+  padding: 30px;
+}
+.card-footer {
+  padding: 0 30px 30px;
+}
+.btn {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 3px;
+  padding: 16px;
+  background: #462cb3;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: all 200ms ease-in-out;
+}
+.btn:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 960px) {
